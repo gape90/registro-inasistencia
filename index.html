@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Asistencia Mecatrónica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro Asistencia Mecatrónica</h1>
+
+        <label>Fecha:</label>
+        <input type="date" id="fecha">
+
+<label>Materia:</label>
+<select id="materia">
+    <option value="Matemática">Matemática</option>
+    <option value="Física">Física</option>
+    <option value="Herramientas Inf.">Herramientas Inf.</option>
+    <option value="Inglés">Inglés</option>
+    <option value="Mecatrónica">Mecatrónica</option>
+</select>
+
+
+        <h2>Lista de Alumnos</h2>
+        <table>
+            <thead>
+                <tr><th>Nombre</th><th>Inasistencia</th></tr>
+            </thead>
+            <tbody id="tablaAlumnos"></tbody>
+        </table>
+
+        <button class="boton" onclick="guardarAsistencia()">Guardar</button>
+        <button class="boton secundario" onclick="window.location.href='faltas.html'">Ver Inasistencias</button>
+
+        <div id="mensaje" class="mensaje-oculto">✅ Inasistencias guardadas correctamente</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
